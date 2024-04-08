@@ -1,3 +1,3 @@
 # Test Webseite mit Gästebuch
 
-#### Testing Python, JavaScript, NodeJS, HTML, and CSS 
+#### Testen von Python, JavaScript, NodeJS, HTML, und CSS 
