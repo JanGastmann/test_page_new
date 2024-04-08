@@ -2,28 +2,30 @@
     {
         "title": "Jan",
         "content": "Test",
-        "id": 2
+        "id": 1
     },
     {
         "title": "Jan ",
         "content": "Test",
-        "id": 3
+        "id": 2
     },
     {
         "title": "pkewnroigmre",
         "content": "eringoierg",
-        "id": 4
+        "id": 3
     },
     {
         "title": "Test hallo",
         "content": "was geht",
-        "id": 5
+        "id": 4
     },
     {
         "title": "Hallo",
-        "content": "Ich teste was neues"
+        "content": "Ich teste was neues",
+        "id": 5
     },
     {
-        "_method": "DELETE"
+        "_method": "DELETE",
+        "id": 6
     }
 ]
