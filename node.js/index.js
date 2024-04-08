@@ -55,6 +55,23 @@ app.get('/auto_id.py', function(req, res) {
 app.get('/gaestebuch.json', function(req, res) {
   res.sendFile(path.join(__dirname, 'gaestebuch.json'));
 });
+app.post('/gaestebuch/:id', function(req, res) {
+
+  var entryId = req.params.id;
+  console.log (req.params.id);
+  // Filter out the entry with the given id
+  const newgaestebuch = gaestebuch.filter(entry => {
+    console.log(`Comparing entry.id (${entry.id}) with entryId (${entryId})`);
+    return +entry.id !== +entryId;
+  });
+  console.log (newgaestebuch)
+  // Write the updated entries back to the file
+  fs.writeFileSync(gaestebuchPath, JSON.stringify(newgaestebuch));
+  var gaestebuch = JSON.parse(fs.readFileSync(gaestebuchPath, 'utf8'));
+  // Send a success response
+  res.redirect('/gaestebuch');
+})
+
 
   
   app.listen(2500, () => {

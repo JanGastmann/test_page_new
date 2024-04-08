@@ -1,10 +1,5 @@
 [
     {
-        "title": "Hallo",
-        "content": "Ein neuer Test",
-        "id": 1
-    },
-    {
         "title": "Jan",
         "content": "Test",
         "id": 2
@@ -23,5 +18,12 @@
         "title": "Test hallo",
         "content": "was geht",
         "id": 5
+    },
+    {
+        "title": "Hallo",
+        "content": "Ich teste was neues"
+    },
+    {
+        "_method": "DELETE"
     }
 ]

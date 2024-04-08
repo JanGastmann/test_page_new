@@ -28,13 +28,17 @@
 
             <h1>Gästebuch</h1>
             <ul>
-              <% gaestebuch.forEach(function(eintrag) { %>
-                <li>
-                  <h2><%= eintrag.title %></h2>
-                  <p><%= eintrag.content %></p>
-                </li>
-              <% }); %>
-            </ul>
+                <% gaestebuch.forEach(function(eintrag) { %>
+                  <li>
+                    <h2><%= eintrag.title %></h2>
+                    <p><%= eintrag.content %></p>
+                    <form action="/gaestebuch/<%= eintrag.id %>" method="POST">
+                      <input type="hidden" name="_method" value="DELETE">
+                      <button type="submit">Löschen</button>
+                    </form>
+                  </li>
+                <% }); %>
+              </ul>
             <hr>
     
             <h2>Neuer Eintrag hinzufügen!</h2>
