@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Willkommen auf Meiner Seite</h1>
+        <p><h4>hier könnt ihr kontakt zu mir Aufbauen!</h4></p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>                       
+            <li><a href="/kontakt">Kontakt</a></li>
+            <li><a href="/impressum">Impressum</a></li>
+            <li><a href="/gaestebuch">Gästebuch</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div style="text-align:center">
+            <section id="contact">
+            <h2>Sende mir eine Nachricht!</h2>
+            <hr>
+            <form id="contactForm">
+                <p><label for="email">Email:</label></p>
+                <input type="email" id="email" name="email" required>
+                <p><label for="message">Nachricht:</label></p>
+                <p><textarea id="message" name="message" rows="4" required></textarea></p>
+                <button type="submit">Nachricht Senden</button>
+            </form>
+            <div id="confirmationMessage"></div>
+        </section>
+    </div>
+        
+    </main>
+    <footer>
+        <p>&copy; 2024 MyWebsite. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

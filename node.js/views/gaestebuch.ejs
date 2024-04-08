@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gästebuch</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Willkommen auf Meiner Seite</h1>
+        <h4>Gästebuch</h4>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>                       
+            <li><a href="/kontakt">Kontakt</a></li>
+            <li><a href="/impressum">Impressum</a></li>
+            <li><a href="/gaestebuch">Gästebuch</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <div style="text-align:center">
+            <h1>Gästebuch</h1>
+            <hr>
+            </div>
+
+            <h1>Gästebuch</h1>
+            <ul>
+              <% gaestebuch.forEach(function(eintrag) { %>
+                <li>
+                  <h2><%= eintrag.title %></h2>
+                  <p><%= eintrag.content %></p>
+                </li>
+              <% }); %>
+            </ul>
+            <hr>
+    
+            <h2>Neuer Eintrag hinzufügen!</h2>
+            <form action="/gaestebuch" method="ID"></form>            
+            <form action="/gaestebuch" method="POST">
+                <div class="gaestebuch" title="Neuer Eintrag hinzufügen"></div>
+                <input type="text" name="title" placeholder="Titel" required>
+                <input type="text" name="content" placeholder="Inhalt" required>
+                <input type="submit" value="Eintrag hinzufügen">
+
+                    </section>
+
+    
+
+    </main>
+    <footer>
+        <p>&copy; 2024 MyWebsite. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
