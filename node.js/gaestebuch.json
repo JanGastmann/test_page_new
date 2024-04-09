@@ -23,9 +23,6 @@
         "title": "Hallo",
         "content": "Ich teste was neues",
         "id": 5
-    },
-    {
-        "_method": "DELETE",
-        "id": 6
     }
+
 ]
