@@ -1,12 +1,12 @@
 {
   "name": "node",
   "version": "1.0.0",
-  "description": "",
+  "description": "Das ist nur eine Test Page, um Funktion zu testen im Web breich.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Ich",
+  "author": "Jan Gastmann",
   "license": "ISC",
   "dependencies": {
     "child_process": "^1.0.2",
