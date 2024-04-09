@@ -1,22 +1,12 @@
 [
     {
-        "title": "Jan",
-        "content": "Test",
+        "title": "Test hallo",
+        "content": "was geht",
         "id": 1
     },
     {
-        "title": "Jan ",
-        "content": "Test",
+        "title": "Neuer Test",
+        "content": "Hallo hey na",
         "id": 2
-    },
-    {
-        "title": "pkewnroigmre",
-        "content": "eringoierg",
-        "id": 3
-    },
-    {
-        "title": "Test hallo",
-        "content": "was geht",
-        "id": 4
     }
 ]

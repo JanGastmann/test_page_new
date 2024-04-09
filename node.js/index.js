@@ -16,7 +16,7 @@ app.get('/', function(req, res) {
     res.sendFile(path.join(__dirname, 'impressum.html'));
   });
   const gaestebuchPath = path.join(__dirname, 'gaestebuch.json');
-  const gaestebuch = JSON.parse(fs.readFileSync(gaestebuchPath, 'utf8'));
+  var gaestebuch = JSON.parse(fs.readFileSync(gaestebuchPath, 'utf8'));
     app.get('/gaestebuch', function(req, res) {
       res.render('gaestebuch', { gaestebuch });
     });
@@ -55,7 +55,7 @@ app.get('/auto_id.py', function(req, res) {
 app.get('/gaestebuch.json', function(req, res) {
   res.sendFile(path.join(__dirname, 'gaestebuch.json'));
 });
-app.post('/gaestebuch/:id', function(req, res) {
+app.post('/gaestebuch/delete/:id', function(req, res) {
 
   var entryId = req.params.id;
   console.log (req.params.id);
@@ -67,7 +67,7 @@ app.post('/gaestebuch/:id', function(req, res) {
   console.log (newgaestebuch)
   // Write the updated entries back to the file
   fs.writeFileSync(gaestebuchPath, JSON.stringify(newgaestebuch));
-  var gaestebuch = JSON.parse(fs.readFileSync(gaestebuchPath, 'utf8'));
+  gaestebuch = JSON.parse(fs.readFileSync(gaestebuchPath, 'utf8'));
   // Send a success response
   res.redirect('/gaestebuch');
 })
